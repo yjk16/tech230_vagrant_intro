@@ -11,6 +11,8 @@ e.g.
 
 would make a file called 'example.txt'.
 
+----
+
 `file`
 shows what is in a file
 
@@ -20,6 +22,8 @@ e.g.
 
 would show what is in the file 'example.txt'.
 
+----
+
 `mv`
 can be used to rename, move or change a file
 
@@ -28,6 +32,8 @@ e.g.
 `$mv example.txt example.jpg`
 would change the name of the example.txt file into 'example.jpg'.
 
+----
+
 `cat`
 shows what is in a file
 
@@ -35,6 +41,8 @@ e.g.
 
 `$cat example.txt`
 would show you what is in the file.
+
+----
 
 `sudo nano`
 let's you add to a file
@@ -45,6 +53,8 @@ e.g.
 would let you edit the file 'example.txt'.
 
 If the file doesn't already exist, it will create it for you.
+
+----
 
 `Control + X`
 to exit
@@ -57,6 +67,8 @@ e.g.
 `$mkdir example`
 would make a directory called 'example'.
 
+----
+
 `rm`
 stands for remove
 
@@ -67,6 +79,8 @@ would remove the file 'example.txt' from the directory.
 
 You can't use this to remove directories.
 
+----
+
 `-rf`
 means that even if a file is open, you will force a removal
 
@@ -74,6 +88,8 @@ e.g.
 
 `$rm -rf`
 would remove the entire system.
+
+----
 
 `$rm -rf example`
 would remove the directory 'example'.
@@ -86,12 +102,16 @@ e.g.
 `$mkdir .hidden_directory`
 would make a directory called 'hidden_directory' which would be hidden.
 
+----
+
 `ls -a`
 shows all files in the directory, including those that are hidden
 
 i.e.
 
 `$ls -a`
+
+----
 
 `*`
 stands for wildcards, also means all
@@ -100,6 +120,8 @@ e.g.
 
 `$ls *.txt`
 would show all files ending with '.txt'.
+
+----
 
 `ls -l`
 checks permissions on files
@@ -128,6 +150,8 @@ The second batch of letters (after the dashes) show which permissions a group mi
 
 The last batch of letters show which permissions everyone else would have.
 
+----
+
 `chmod +x`
 will add execution privileges to the current owner
 
@@ -135,6 +159,8 @@ e.g.
 
 `$chmod u+x example.txt`
 will give the current owner user executive privileges for the file 'example.txt'.
+
+----
 
 There are numerical shorthands for privileges...
 
