@@ -136,6 +136,22 @@ Add:
 
 to your Vagrant file
 
-![alt](addipaddress.png)
+under:
 
-And you should be 
+`config.vm.box = "ubuntu/xenial64"`
+
+Your code in Vagrantfile should look like:
+
+![alt](ipaddress.png)
+
+And you should be connected!
+
+To check, go to a web browser and type in the ip address into the browser.  So:
+
+`192.168.10.100`
+
+and it should look like this:
+
+![alt](welcometonginx.png)
+
+Congratulations, you have created a virtual machine and connected this to an IP address!
