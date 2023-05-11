@@ -155,3 +155,59 @@ and it should look like this:
 ![alt](welcometonginx.png)
 
 Congratulations, you have created a virtual machine and connected this to an IP address!
+
+----
+
+# To automate Nginx
+
+In the same folder as your Vagrantfile, create a file called 'provision.sh'
+
+Add the following lines:
+
+`#!/bin/bash`
+`sudo apt-get update -y`
+`sudo apt-get upgrade -y`
+`sudo apt-get install nginx -y`
+`sudo systemctl start nginx`
+
+It should look like this:
+
+![alt](provision_sh.png)
+
+Then in your Vagrantfile, add the following line at the end of your code:
+
+`config.vm.provision "shell", path: "provision.sh"`
+
+Your Vagrantfile code should look like this:
+
+![alt](auto_vagrant.png)
+
+And voila, this should mean that in order to use your virtual machine, all you would have to do is to make sure you are in the right directory in your terminal, and then enter:
+
+`vagrant up`
+
+which will build the virtual machine.
+
+Enter:
+
+`vagrant ssh`
+
+to enter the virtual machine.
+
+If your virtual machine is running, your Virtual Box should look like this:
+
+![alt](oracle.png)
+
+----
+
+Enter:
+
+`vagrant halt`
+
+to stop the virtual machine without destroying it.
+
+And:
+
+`vagrant destroy`
+
+to terminate it completely.
